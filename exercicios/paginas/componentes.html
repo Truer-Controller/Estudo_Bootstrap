@@ -106,6 +106,25 @@
 <hr />
 
 <!-- Peginação -->
+<nav>
+  <ul class="pagination">
+    <li class="page-item">
+      <a href="#" class="page-link">anterior</a>
+    </li>
+    <li class="page-item">
+      <a href="#" class="page-link">1</a>
+    </li>
+    <li class="page-item">
+      <a href="#" class="page-link">2</a>
+    </li>
+    <li class="page-item">
+      <a href="#" class="page-link">3</a>
+    </li>
+    <li class="page-item">
+      <a href="#" class="page-link">proximo</a>
+    </li>
+  </ul>
+</nav>
 
 <h1 class="mt-5">
   5. Tooltip -
@@ -120,7 +139,15 @@
 <hr />
 
 <!-- Tooltip -->
+<div>
+  <div class="alert alert-warning">
+      preciso de um js
+  </div>
 
+  <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Tooltip">
+    Tooltip on top
+  </button>
+</div>
 <h1 class="mt-5">
   6. Slider -
   <small>
@@ -150,5 +177,7 @@
 <!-- Accordion -->
 
 <script>
-  // ...
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 </script>
